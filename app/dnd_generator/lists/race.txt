@@ -1,0 +1,8 @@
+human
+dwarf
+dragonborn
+elf
+half-elf
+halfing
+gnome
+kenku
