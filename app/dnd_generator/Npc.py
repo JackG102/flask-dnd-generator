@@ -88,12 +88,11 @@ class Npc:
     return npc_list
 
   def describe(self):
-    return (
-    f"""
-    Name: {self.first_name} {self.last_name}
-    Race: {self.race}
-    Gender: {self.gender}
-    Vocation: {self.vocation}
-    Alignment: {self.alignment}
-    """
-    )
+    return(
+      {
+        'Name': self.first_name + self.last_name,
+        'Race': self.race,
+        'Gender': self.gender,
+        'Vocation': self.vocation,
+        'Alignment': self.alignment
+      })
