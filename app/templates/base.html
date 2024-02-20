@@ -11,5 +11,6 @@
         <div>DnD Generator: <a href="/index">Home</a></div>
         <hr>
         {% block content %}{% endblock %}
+        <script src="{{ url_for('dndgenerator.static', filename='fetch-json.js') }}" type="text/javascript"></script>
     </body>
 </html>
