@@ -90,7 +90,7 @@ class Npc:
   def describe(self):
     return(
       {
-        'Name': self.first_name + self.last_name,
+        'Name': self.first_name + " " + self.last_name,
         'Race': self.race,
         'Gender': self.gender,
         'Vocation': self.vocation,
