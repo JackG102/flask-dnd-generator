@@ -14,12 +14,12 @@ const fetchJson = endpoint => {
 const printJsonData = data => {
   const parsed_object = JSON.parse(JSON.stringify(data, undefined, 2));
   console.log(parsed_object);
-  document.getElementById("target_json_container").innerHTML = "Converting JSON to HTML <br><br>" + 
-  "Name: " + parsed_object.Name + 
-  "<br>Race: " + parsed_object.Race +
-  "<br>Gender: " + parsed_object.Gender +
-  "<br>Vocation: " + parsed_object.Vocation +
-  "<br>Alignment: " + parsed_object.Alignment;
+  document.getElementById("target_json_container").innerHTML =
+    "Name: " + parsed_object.Name + 
+    "<br>Race: " + parsed_object.Race +
+    "<br>Gender: " + parsed_object.Gender +
+    "<br>Vocation: " + parsed_object.Vocation +
+    "<br>Alignment: " + parsed_object.Alignment;
 }
 
 
