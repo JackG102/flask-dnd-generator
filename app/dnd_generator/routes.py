@@ -10,5 +10,4 @@ def return_npc():
 def return_npc_json():
   testNPC = Npc()
   npc = testNPC.describe()
-  return jsonify(npc)
-  
+  return jsonify(npc)  
