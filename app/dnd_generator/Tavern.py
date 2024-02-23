@@ -1,7 +1,7 @@
 import os
 import random
 from pathlib import Path
-from Npc import Npc
+from app.dnd_generator.Npc import Npc
 
 """
 A class to generate Taverns.
@@ -41,34 +41,26 @@ class Tavern:
     self.tavern_npcs = Npc.generate_npc(3)
 
   def assign_signature_dish(self):
-    # TODO - add dish made of three ingredients with a funny name
-    signature_dish = {}
     ingredient_list = []
     ingredient_start = 0
     ingredient_list_file = open(os.path.join(os.path.dirname(self.lists_folder_location), 'ingredients.txt'))
     ingredient_lines = ingredient_list_file.read().splitlines() 
+    self.signature_dish = ingredient_list
     
     while ingredient_start < 3:
       ingredient_list.append(random.choice(ingredient_lines))
       self.ingredients = ingredient_list
       ingredient_start += 1
-  
+
   def describe(self):
-    tavern_npc_text = ''
-    for npc in self.tavern_npcs:
-      tavern_npc_text += npc.describe()
-      
-    print(
-    f"""
-  Tavern Name: {self.name}
-  
-  Tavern Keeper: {self.tavern_keeper.describe()}
-  
-  Tavern NPCS: {tavern_npc_text}
-    """
-    )
-
-testTavern = Tavern()
-testTavern.describe()
-print(testTavern.ingredients)
-
+    item = self.tavern_npcs[0]
+    return({
+        'Name': self.name,
+        'Barkeeper': self.tavern_keeper.describe(),
+        'Tavern NPCs': [
+          self.tavern_npcs[0].describe(), 
+          self.tavern_npcs[1].describe(), 
+          self.tavern_npcs[2].describe()
+        ],
+        'Signature Dish': self.signature_dish
+      })
