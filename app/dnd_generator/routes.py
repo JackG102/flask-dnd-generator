@@ -12,10 +12,15 @@ def return_npc():
 def return_npc_json():
   testNPC = Npc()
   npc = testNPC.describe()
-  return jsonify(npc)  
+  return jsonify(npc)
+
+@app.route('/tavern')
+def return_tavern():
+  tavern = Tavern().describe()
+  return render_template('tavern.html', tavernObj=tavern)
 
 @app.route('/tavern_json')
 def return_tavern_json():
-  testTavern = Tavern()
-  tavern = testTavern.describe()
+  jsonTavern = Tavern()
+  tavern = jsonTavern.describe()
   return jsonify(tavern)  

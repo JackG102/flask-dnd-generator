@@ -53,14 +53,13 @@ class Tavern:
       ingredient_start += 1
 
   def describe(self):
-    item = self.tavern_npcs[0]
     return({
         'Name': self.name,
         'Barkeeper': self.tavern_keeper.describe(),
-        'Tavern NPCs': [
+        'Tavern_NPCs': [
           self.tavern_npcs[0].describe(), 
           self.tavern_npcs[1].describe(), 
           self.tavern_npcs[2].describe()
         ],
-        'Signature Dish': self.signature_dish
+        'Signature_Dish': self.signature_dish
       })

@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>Generate a Tavern</h1>
+    <a href='/tavern'>Generate</a>
+    <hr>
+    <div id="tavern-container">
+      {{ tavernObj }}
+      <h2>Tavern Name: {{ tavernObj.Name }}</h2>
+      <div>
+        <h3>Signature Dish</h3>
+        <ul>
+          <li>{{ tavernObj.Signature_Dish[0] }}</li>
+          <li>{{ tavernObj.Signature_Dish[1] }}</li>
+          <li>{{ tavernObj.Signature_Dish[2] }}</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Barkeeper</h3>
+        <ul>
+          <li>Name: {{ tavernObj.Barkeeper.Name }}</li>
+          <li>Race: {{ tavernObj.Barkeeper.Race }}</li>
+          <li>Gender: {{ tavernObj.Barkeeper.Gender }}</li>
+          <li>Former Vocation: {{ tavernObj.Barkeeper.Vocation }}</li>
+          <li>Alignment: {{ tavernObj.Barkeeper.Alignment }}</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Tavern NPC 1</h3>
+        <ul>
+          <li>Name: {{ tavernObj.Tavern_NPCs[0].Name }}</li>
+          <li>Race: {{ tavernObj.Tavern_NPCs[0].Race }}</li>
+          <li>Gender: {{ tavernObj.Tavern_NPCs[0].Gender }}</li>
+          <li>Vocation: {{ tavernObj.Tavern_NPCs[0].Vocation }}</li>
+          <li>Alignment: {{ tavernObj.Tavern_NPCs[0].Alignment }}</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Tavern NPC 2</h3>
+        <ul>
+          <li>Name: {{ tavernObj.Tavern_NPCs[1].Name }}</li>
+          <li>Race: {{ tavernObj.Tavern_NPCs[1].Race }}</li>
+          <li>Gender: {{ tavernObj.Tavern_NPCs[1].Gender }}</li>
+          <li>Vocation: {{ tavernObj.Tavern_NPCs[1].Vocation }}</li>
+          <li>Alignment: {{ tavernObj.Tavern_NPCs[1].Alignment }}</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Tavern NPC 3</h3>
+        <ul>
+          <li>Name: {{ tavernObj.Tavern_NPCs[2].Name }}</li>
+          <li>Race: {{ tavernObj.Tavern_NPCs[2].Race }}</li>
+          <li>Gender: {{ tavernObj.Tavern_NPCs[2].Gender }}</li>
+          <li>Vocation: {{ tavernObj.Tavern_NPCs[2].Vocation }}</li>
+          <li>Alignment: {{ tavernObj.Tavern_NPCs[2].Alignment }}</li>
+        </ul>
+      </div>
+    </div>
+{% endblock %}
