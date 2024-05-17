@@ -24,13 +24,16 @@ class Tavern:
     self.assign_signature_dish()
 
   def assign_name(self):
-    adjective_list_file = open(os.path.join(os.path.dirname(self.lists_folder_location), 'adjectives.txt'))
-    adjective_lines = adjective_list_file.read().splitlines() 
-    adjective_name = random.choice(adjective_lines)
 
     animal_list_file = open(os.path.join(os.path.dirname(self.lists_folder_location), 'animals.txt'))
     animal_lines = animal_list_file.read().splitlines() 
     animal_name = random.choice(animal_lines)
+    animal_name_letter_starts_with = animal_name[:1]
+
+    adjective_list_file = open(os.path.join(os.path.dirname(self.lists_folder_location), 'adjectives.txt'))
+    adjective_text = adjective_list_file.read()
+    starts_with = [word for word in adjective_text.split() if word.startswith((animal_name_letter_starts_with.lower()))]
+    adjective_name = random.choice(starts_with)
 
     self.name = f"{adjective_name.capitalize()} {animal_name}"
 
