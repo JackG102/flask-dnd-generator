@@ -7,6 +7,7 @@ from app.dnd_generator.Npc import Npc
 A class to generate Taverns.
 They have the following attributes:
  - Name
+ - Signature Dish
  - Tavern Keeper
  - Tavern NPCS
 
