@@ -9,15 +9,15 @@ Guinea pig
 Horse
 Pig
 Rabbit
-Fancy rat varieties
-laboratory rat strains
-Sheep breeds
-Water buffalo breeds
-Chicken breeds
-Duck breeds
-Goose breeds
-Pigeon breeds
-Turkey breeds
+Fancy rat
+laboratory rat
+Sheep
+Water buffalo
+Chicken
+Duck
+Goose
+Pigeon
+Turkey
 Aardvark
 Aardwolf
 African buffalo
@@ -26,7 +26,7 @@ African leopard
 Albatross
 Alligator
 Alpaca
-American buffalo (bison)
+American buffalo
 American robin
 Amphibian
 Anaconda
@@ -44,7 +44,7 @@ Arctic Wolf
 Armadillo
 Arrow crab
 Asp
-Ass (donkey)
+Ass
 Baboon
 Badger
 Bald eagle
@@ -77,7 +77,7 @@ Booby
 Box jellyfish
 Bovid
 Buffalo, African
-Buffalo, American (bison)
+Buffalo, American
 Bug
 Butterfly
 Buzzard
@@ -453,10 +453,6 @@ Yak
 Yellow perch
 Zebra
 Zebra finch
-Animals by number of neurons
-Animals by size
-Common household pests
-Common names of poisonous animals
 Alpaca
 Bali cattle
 Cat
