@@ -12,7 +12,7 @@ They have the following attributes:
  - Tavern NPCS
 
 There are helper methods to:
- - describe the tavern
+ - describe the tavern, return dictionary
 """
 class Tavern:
   project_location = str(Path(__file__).parent)

@@ -14,7 +14,7 @@ They have the following attributes:
 
 There are helper methods to:
  - auto-generate NPCS
- - describe the NPC in a string 
+ - describe the NPC using dictionary 
 """
 
 class Npc:
